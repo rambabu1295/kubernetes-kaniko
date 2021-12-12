@@ -5,10 +5,10 @@ metadata:
 spec:
   containers:
   - name: kaniko
-    image: mgit/base:kaniko-executor-debug-stable
+    image: gcr.io/kaniko-project/executor:latest
     args:
     - "--context=git://github.com/scriptcamp/kubernetes-kaniko"
-    - "--destination=ramdocker/kaniko-test-image:1.0"
+    - "--destination=ramumldocker/kaniko-test-image:1.0"
     volumeMounts:
     - name: kaniko-secret
       mountPath: /kaniko/.docker
