@@ -5,7 +5,7 @@ metadata:
 spec:
   containers:
   - name: kaniko
-    image: gcr.io/kaniko-project/executor:latest
+    image: mgit/base:kaniko-executor-debug-stable
     args:
     - "--context=git://github.com/scriptcamp/kubernetes-kaniko"
     - "--destination=ramdocker/kaniko-test-image:1.0"
